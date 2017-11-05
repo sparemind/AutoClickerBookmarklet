@@ -1,5 +1,6 @@
 javascript:
 
+var DELAY = 1;
 var autoClickerStyleElement = document.createElement("style");
 autoClickerStyleElement.innerHTML="*{cursor: crosshair !important;}";
 document.body.appendChild(autoClickerStyleElement);
@@ -22,7 +23,7 @@ function addClicker(e) {
 function autoClick(element) {
 	if(element.classList.contains("auto-clicker-target")) {
 		element.click();
-		setTimeout(function(){ autoClick(element); }, 10);
+		setTimeout(function(){ autoClick(element); }, DELAY);
 	}
 }
 document.body.addEventListener("click", addClicker, 0);
