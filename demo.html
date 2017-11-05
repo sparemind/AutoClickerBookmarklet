@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+    <body>
+        <script>
+            function increment(id) {
+                var counter = document.getElementById(id);
+                counter.innerHTML = parseInt(counter.innerHTML) + 1;
+            }
+        </script>
+        <div>
+            <button onclick="increment(0);">Click Me!</button>
+            <span id="0">0</span>
+        </div>
+        <div>
+            <button onclick="increment(1);">Click Me!</button>
+            <span id="1">0</span>
+        </div>
+        <div>
+            <button onclick="increment(2);">Click Me!</button>
+            <span id="2">0</span>
+        </div>
+    </body>
+</html>
